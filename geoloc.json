@@ -16,7 +16,8 @@
         "wordpot.events",
         "shockpot.events",
         "p0f.events",
-        "elastichoney.events"
+        "elastichoney.events",
+	"honeything.events"    
     ],
     "GEOLOC_CHAN": "geoloc.events"
 }
