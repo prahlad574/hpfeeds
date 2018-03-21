@@ -207,3 +207,14 @@ def elastichoney_events(identifier, payload, gi):
         traceback.print_exc()
         return None
     return create_message('elastichoney.events', identifier, gi, src_ip=dec.source, dst_ip=dec.honeypot)
+
+def honeything_event(identifier, payload, gi):
+    try:
+        dec = ezdict(json.loads(str(payload)))
+    except:
+        print 'exception processing honeything alert'
+        traceback.print_exc()
+        return
+
+    return create_message('honeything.events', identifier, gi, src_ip=dec.source_ip, dst_ip=dec.dest_ip)
+
