@@ -208,7 +208,7 @@ def elastichoney_events(identifier, payload, gi):
         return None
     return create_message('elastichoney.events', identifier, gi, src_ip=dec.source, dst_ip=dec.honeypot)
 
-def honeything_event(identifier, payload, gi):
+def honeything_events(identifier, payload, gi):
     try:
         dec = ezdict(json.loads(str(payload)))
     except:
