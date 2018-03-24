@@ -61,7 +61,7 @@ PROCESSORS = {
     'p0f.events': [p0f_event,],
     'suricata.events': [suricata_events,],
     'elastichoney.events': [elastichoney_events,],
-    'elastichoney.events': [honeything_events,],
+    'honeything.events': [honeything_events,],
 }
 
 def main():
